@@ -10,12 +10,17 @@ Original file is located at
 from scipy.stats import bernoulli
 import matplotlib.pyplot as plt
 import numpy as np
-sim_len=100000
 
+# conducting the experimwnt of tossing two coins for sim_len times
+sim_len=100000
+# creating the random outcomes x1 for 1st and x2 for 2nd coins
 x1= bernoulli.rvs(size = sim_len, p=1/2)
 x2= bernoulli.rvs(size = sim_len, p=1/2)
 
+#c represents no of cases of both heads
 c=0
+""" cond_count says the number of outcomes in which the given condition of atleast
+ one head is satisfied"""
 cond_count=0
 i=0
 while (i<sim_len):
@@ -25,6 +30,7 @@ while (i<sim_len):
     c+=1
   i+=1
 
+#p represents required probability
 p=c/cond_count
 print ("The probability value obtained by simulation is ",p)
 print ("The probability obtained by the calculation is 1/3")

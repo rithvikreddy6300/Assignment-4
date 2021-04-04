@@ -155,7 +155,8 @@ Let $X=\{0,1\}$ be the set of random variables where 0 represents \textbf{Tail},
 Let P denote the probability that both outcomes are heads given atleast one is a head,
 \begin{align}
 \implies & P=\pr{AB|A+B}\\
-\implies & P=\dfrac{\pr{A,B,A+B}}{\pr{A+B}}\\
+\implies & P=\dfrac{\pr{AB(A+B)}}{\pr{A+B}}\\
+\text{But, }&AB(A+B)=ABA+ABB=AB+AB=AB\\ 
 \implies & P=\dfrac{\pr{AB}}{\pr{A+B}}\\
 \implies & P=\dfrac{\pr{AB}}{\pr{A}+\pr{B}-\pr{AB}}
 \end{align}
